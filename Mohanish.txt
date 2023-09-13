@@ -1,0 +1,81 @@
+#include <conio.h>
+
+#include <malloc.h>
+
+struct Node (
+
+int data;
+
+struct Node prev;
+
+struct Node* next;
+
+};
+
+struct Node* head = NULL;
+
+// Function to insert a node at the beginning of the list void insertAtBeginning (int value) {
+
+newNode->data = value;
+
+struct Node* newNode = (struct Node*)malloc(sizeof(struct Node)); newNode->next = head;
+
+newNode->prev = NULL;
+
+if (head != NULL) {
+
+head->prev = newNode;
+
+}
+
+head = newNode;
+
+// Function to display the list void display() { struct Node temp = head; printf("List: "); while (temp = NULL) { printf("%d" temp->data); temp temp->next;
+
+}
+
+printf("\n");
+
+}
+
+int main() (
+
+clrscr(); int choice, value;
+
+do { printf("\ni. Insert at the beginning");
+
+printf("\n2. Display");
+
+printf("\n3. Exit");
+
+printf("\nEnter your choice: "; scanf("%d", &choice);
+
+switch (choice) {
+
+case 1:
+
+printf("Enter the value to insert: ");
+
+scanf("%d", &value); insertAtBeginning (value);
+
+break;
+
+case 2:
+
+display();
+
+break; case 3:
+
+printf("Exiting the program. \n");
+
+break;
+
+default:
+
+printf("Invalid choice. Please try again.\n");
+
+} } while (choice ==0);
+
+getch(); // Wait for a key press before exiting
+
+return 0;
